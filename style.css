@@ -1,0 +1,618 @@
+*, html, body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    font-size: 1.8rem;  
+}
+
+.page-layout
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.home-section, .about-section
+{
+    display: block;
+    clear: both;
+}
+.header-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    background-color: #EFEFEF;
+}
+
+.header-section-logo
+{
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color:transparent;
+}
+
+.header-section-nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 160px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    background-color:#000;
+}
+
+.header-section nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.header-section nav ul li
+{
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+.header-section nav ul li:hover
+{
+    background-color: #333;
+    cursor: pointer;
+    border-top: 2px solid rgb(23, 199, 46);
+}
+
+.section
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.new-line
+{
+    display: block;
+    width: 100%;
+    height: 3px;
+}
+
+.section-one
+{
+    margin-top: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    content: "";
+    background: linear-gradient(to bottom, #eade66, rgb(230, 230, 30));
+    height: 100vh;
+    min-width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+.section-one-left
+{
+    width: 50%;
+    height: auto;
+    padding: 15px 5%;
+}
+
+.section-one-right
+{
+    background: url('img/yellow_dog_small.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one-left h2
+{
+    font-size: 2rem;
+}
+
+.section-one-left ul
+{
+    margin: 20px 7%;
+}
+
+.section-one-left ul li
+{
+    font-size: 1.3rem;
+}
+
+.mob-section-one-left, .mob-section-two-left, .mob-section-heading, .mob-section-three-right
+{
+    display: none;
+
+}
+
+.section-two
+{
+    background: linear-gradient(to bottom, turquoise, rgb(41, 163, 151));
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-two-left
+{
+    display: block;
+    width: 45%;
+    height: 100%;
+    background-color: #333;
+    background: url('img/tq_dog.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+}
+
+.section-two-right
+{
+    width: 63vw;
+    font-size: 1.2rem;
+    padding: 5%;
+    font-family: Arial, sans-serif;
+}
+
+.section-three
+{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background:rgb(38, 123, 250);
+    width: 100vw;
+    height: 70vh;
+}
+
+.section-three-left
+{
+    padding: 5%;
+    width: 50vw;
+    font-family: Arial;
+    font-size: 1.3rem;
+    color: #FFF;
+}
+
+.section-three-left ul
+{
+    display: block;
+    margin: 5% 5% 5% 7%;
+}
+
+.section-three-left ul li
+{
+    padding: 10px 0;
+}
+
+.section-three-right
+{
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    background: url('img/dr_dog.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.section-four
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    background: linear-gradient(to bottom, rgb(228, 150, 252), rgb(209, 107, 240));
+
+}
+
+.section-four-left
+{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/dog_lavendar_small.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.section-four-right
+{
+    font-size: 1.4rem;
+    padding-right: 5%;
+}
+
+.section-five-heading
+{
+    display: block;
+    background: #333;
+    width: 100vw;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.section-five-main
+{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #333;
+    padding: 50px;
+}
+
+
+.section-five-main .product-img
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section-five-main .product-img h2
+{
+    padding: 15px 0 0 0;
+    color: #FFF;
+}
+
+.section-six-heading
+{
+    display: block;
+    background: rgb(127, 200, 243);
+    width: 100vw;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-six
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    background: linear-gradient(to bottom, rgb(127, 200, 243), rgb(7, 107, 168));
+}
+
+.section-six-left
+{
+    width: 50vw;
+    height: 100%;
+    background: url('img/dog_blue.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-six-right
+{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hide
+{
+    display: none;
+}
+
+/* // start responsive css */
+
+@media only screen and (max-width: 1200px){
+
+    p
+    {
+        font-size: 10pt;  
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+    .header-section-nav nav
+    {
+        display: none;
+    }
+
+    .header-section-nav mob-nav
+    {
+        display: block;
+    }
+
+    .mob-nav
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 0;
+        height: 50px;
+    }
+
+    .mob-nav .bar
+    {
+        content: "";
+        min-height: 3px;
+        min-width: 25px;
+        background: #fff;
+        margin: 3px 0;
+    }
+
+    #mob-menu
+    {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+        animation-duration: .5s;
+        animation-name: show;
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-size: 18pt;
+    }
+
+    .mob-menu ul
+    {
+        list-style-type: none;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mob-menu ul li
+    {
+        margin: 0 auto;
+        height: 60px;
+        padding: 20px 0;
+    }
+
+    .mob-menu ul li:hover
+    {
+        cursor: pointer;
+    }
+    
+    .section-one
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height:auto;
+    }
+
+    .section-one-left p
+    {
+        font-size: 1.2rem;
+    }
+
+    .section-one-left, .section-one-right, .section-two-right, .section-three-left, .section-four-right, .section-six-right
+    {
+        display: none;
+    }
+
+    .mob-section-one-left
+    {
+        display: flex;
+        height: auto;
+        
+    }
+
+    .mob-section-one-left img
+    {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+        z-index: 1;
+    }
+
+    .mob-section-heading
+    {
+        height: 45px;
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: Arial;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;      
+    }
+
+    .mob-section-heading:hover
+    {
+        background: #333;
+        cursor: pointer;
+    }
+
+    .section-two
+    {
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+    }
+
+    .section-two-left
+    {
+        width: 100vw;
+        height: 60vh;
+        background: url('img/tq_dog.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+   .section-three
+    {
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-three-right
+    {
+        background: url('img/dr_dog.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 60vh;
+        
+    }
+
+    .mob-section-three-right img
+    {
+        width: 100%;
+    }
+
+    .section-four
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 60vh;
+    }
+    .section-four-right
+    {
+        padding: 5%;
+    }
+
+    .mob-section-four-left
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 60vh;
+        background: url('img/dog_lavendar_small.png');
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .section-five-main .product-img img
+    {
+        width: 95%;
+    }
+
+    .section-six
+    {
+        height: 60vh;
+    }
+    .section-six-left
+    {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .section-six-right
+    {
+        padding: 5%;
+    }
+
+    .mob-info-panel
+    {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+        animation-duration: .5s;
+        animation-name: show;
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-size: 10pt;
+    }
+
+    @keyframes show {
+        from{
+            background: rgba(0, 0, 0, 0);
+        }
+        to{
+            background: rgba(0, 0, 0, 1);
+        }
+    }
+
+    @keyframes grow
+    {
+        from{
+            width: 0;
+            height: 0;
+        }
+        to{
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+
+}
